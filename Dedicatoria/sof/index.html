@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="night-sky"></div>
+    <div id="galaxy"></div>
+    <div id="stars-container"></div>
+    
+    <div class="moon"></div>
+    
+    <div class="simpson-silhouette"></div>
+    
+    <div class="player-container">
+        <div class="album-art">
+            <div class="album-shadow"></div>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Felices Fiestas</title>
+  <style>
+    body {
+      background-color: #f5f0ff; /* tono suave violeta */
+      font-family: 'Georgia', serif;
+      color: #4b0082; /* violeta profundo */
+      text-align: center;
+      padding: 50px;
+    }
+    .mensaje {
+      background: rgba(255, 255, 255, 0.8);
+      border: 2px solid #9370db;
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(147, 112, 219, 0.5);
+      animation: aparecer 3s ease-in-out;
+    }
+    .mensaje h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #800080;
+    }
+    .mensaje p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    @keyframes aparecer {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Felices Fiestas</title>
+  <style>
+    body {
+      background-color: #f5f0ff; /* tono suave violeta */
+      font-family: 'Georgia', serif;
+      color: #4b0082;
+      text-align: center;
+      padding: 50px;
+    }
+    .mensaje {
+      background: rgba(255, 255, 255, 0.8);
+      border: 2px solid #9370db;
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 600px;
+      margin: 170px auto 0 auto; /* lo empuja más abajo */
+      box-shadow: 0 0 15px rgba(147, 112, 219, 0.5);
+      animation: aparecer 3s ease-in-out;
+    }
+    .mensaje h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #800080;
+    }
+    .mensaje p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    @keyframes aparecer {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes desaparecer {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+    .oculto {
+      animation: desaparecer 2s forwards; /* animación de salida */
+    }
+  </style>
+</head>
+<body>
+  <div class="mensaje" id="mensajeNavidad">
+    <h1>Feliz Navidad</h1>
+    <p>
+      Sé que estas fiestas serán diferentes, que extrañas a tu familia, 
+      no es fácil estar lejos de tus seres queridos pero quiero recordarte 
+      que no estás sola. Tu familia te lleva en el corazón, y aunque no 
+      puedan estar físicamente contigo, su cariño sí lo está. 
+      Esta Navidad puede ser distinta pero también puede ser especial.
+    </p>
+    <p><strong>Felices fiestas sofia te quiere mucho este buen servidor ❤️</strong></p>
+  </div>
+
+  <script>
+    // Después de 20 segundos, aplica la clase que oculta el mensaje
+    setTimeout(() => {
+      document.getElementById("mensajeNavidad").classList.add("oculto");
+    }, 30000); // 30000 ms = 30 segundos
+  </script>
+</body>
+</html>
+
